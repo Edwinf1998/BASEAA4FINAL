@@ -1,0 +1,29 @@
+<table class = "table table-striped">
+    <thead class = "table-dark">
+        <tr>
+            <th>Numero</th>
+            <th>Nombres</th>
+            <th>Apellido Materno</th>
+            <th>DNI</th>
+            <th>Edad</th>
+            <th>Fecha Nacimiento</th>
+            <th>estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let identificador of listaUsuarios">
+            <td>{{identificador.idusuariosedwin}}</td>
+            <td>{{identificador.nombusuariosedwin}}</td>
+            <td>{{identificador.apellimaternousuarios}}</td>
+            <td>{{identificador.dni}}</td>
+            <td>{{identificador.edad}}</td>
+            <td>{{identificador.fechanacimiento| date:'yyyy-MM-dd' }}</td>
+            <td>{{identificador.estado}}</td>
+            <td>
+                <button (click) = "actualizarUsuarios(identificador.idusuariosedwin)" class="btn btn-info">Modificar</button>
+                <button (click) = "eliminarUsuarios(identificador.idusuariosedwin)"class="btn btn-danger" style="margin-top: 10px;">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,25 @@
+<table class = "table table-striped">
+    <thead class = "table-dark">
+        <tr>
+            <th>Numero</th>
+            <th>Nombres</th>
+            <th>Precio</th>
+            <th>Fecha Vencimiento</th>
+            <th>estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let identificador of listaAbarrotes">
+            <td>{{identificador.idabarrotesfranco}}</td>
+            <td>{{identificador.nombabarrotesfranco}}</td>
+            <td>{{identificador.precio}}</td>
+            <td>{{identificador.fechaven| date:'yyyy-MM-dd' }}</td>
+            <td>{{identificador.estado}}</td>
+            <td>
+                <button (click) = "actualizarAbarrotes(identificador.idabarrotesfranco)" class="btn btn-info">Modificar</button>
+                <button (click) = "eliminarAbarrotes(identificador.idabarrotesfranco)"class="btn btn-danger" style="margin-top: 10px;">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

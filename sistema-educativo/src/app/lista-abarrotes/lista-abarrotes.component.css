@@ -1,0 +1,10 @@
+.table{
+    background-color: rgb(182, 158, 154);
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){  
+    div{
+        width: 90%;
+}
+}

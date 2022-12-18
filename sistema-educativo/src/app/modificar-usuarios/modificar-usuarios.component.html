@@ -1,0 +1,58 @@
+<!-- <div class="col-md-6 offset-md-3">  
+    <h3 class="text-center"> Modificar Estudiante</h3>
+    <form (ngSubmit) = "OnSubmit()">
+        <div class="form-group">
+            <label>Nombres: </label>
+            <input type ="text" class="form-control" id="nombestudiante" [(ngModel)]="estu.nombestudiante"   name ="nombestudiante">
+        </div>
+        <div class="form-group">
+            <label>Apellido Paterno: </label>
+            <input class="form-control" id="apellipaterno" [(ngModel)] ="estu.apellipaterno"  name ="apellipaterno">
+        </div>
+        <div class="form-group">
+            <label>Apellido Materno: </label>
+            <input class="form-control" id="apellimaterno" [(ngModel)] ="estu.apellimaterno"  name ="apellimaterno">
+        </div>
+        <div class="form-group">
+            <label>DNI: </label>
+            <input class="form-control" type="number" id="dni" [(ngModel)] ="estu.dni"  name ="dni">
+        </div>
+        <div class="form-group">
+            <label>Edad: </label>
+            <input class="form-control" type="number" id="edad" [(ngModel)] ="estu.edad"  name ="edad">
+        </div>
+        <div class="form-group">
+            <label>Fecha de Nacimiento: </label>
+            <input class="form-control" type="date" id="fechanacimiento" [(ngModel)] ="estu.fechanacimiento"  name ="fechanacimiento">
+        </div>
+        <button class="btn btn-success" >Guardar</button>
+    </form>
+</div>  -->
+
+
+
+ <section class="form-register"  >
+    <h2 class="text-center">Modificar Usuarios</h2>
+<form (ngSubmit) = "OnSubmit()">
+    <label >Nombres: </label>
+    <input [(ngModel)] ="usu.nombusuariosedwin" type="text" class="controls"  id="nombusuariosedwin"   name ="nombusuariosedwin" placeholder = "Ingrese su Nombre:">
+    <label>Apellido Materno: </label>
+    <input class="controls" id="apellimaternousuarios" [(ngModel)] ="usu.apellimaternousuarios"  name ="apellimaternousuarios" placeholder ="Ingrese apellido Paterno">
+    <label>DNI: </label>
+    <input class="controls" type="number" id="dni" [(ngModel)] ="usu.dni"  name ="dni" placeholder="Ingrese DNI">
+    <label>Edad: </label>
+    <input class="controls" type="number" id="edad" [(ngModel)] ="usu.edad"  name ="edad" placeholder="Ingrese su Edad">
+    <label>Fecha de Nacimiento: </label>
+    <input class="controls" type="date" id="fechanacimiento" [(ngModel)] ="usu.fechanacimiento"  name ="fechanacimiento">
+    <br><br>
+<button  class="btn btn-primary btn-lg btn-block">Guardar</button>  
+</form>
+
+
+</section>
+
+
+
+
+
+

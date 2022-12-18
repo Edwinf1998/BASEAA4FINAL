@@ -1,0 +1,25 @@
+<table class = "table table-striped">
+    <thead class = "table-dark">
+        <tr>
+            <th>Numero</th>
+            <th>Factura</th>
+            <th>Nombres</th>
+            <th>Fecha Ingreso</th>
+            <th>estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let identificador of listaProveedores">
+            <td>{{identificador.idproveedoreserick}}</td>
+            <td>{{identificador.factura}}</td>
+            <td>{{identificador.nombproveedoreserick}}</td>
+            <td>{{identificador.fechaingreso| date:'yyyy-MM-dd' }}</td>
+            <td>{{identificador.estado}}</td>
+            <td>
+                <button (click) = "actualizarProveedores(identificador.idproveedoreserick)" class="btn btn-info">Modificar</button>
+                <button (click) = "eliminarProveedores(identificador.idproveedoreserick)"class="btn btn-danger" style="margin-top: 10px;">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

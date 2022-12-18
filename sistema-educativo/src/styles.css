@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:rgba(146, 153, 88, 0.87);
+    font-family:Arial, Helvetica, sans-serif;
+}
+th,td{
+    border:solid 1px black;
+    padding: 0%;
+}
+thead{
+    background-color: white;
+    border-bottom: solid 5px ;
+}
+tr:hover{
+    background-color:rgb(40, 69, 77);
+    color:white;
+}
+body{
+    background-image: url(../src/industrial-hall-1630738.jpg);
+
+}
+
+form{
+    color:white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

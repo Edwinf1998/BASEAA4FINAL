@@ -1,0 +1,49 @@
+<!--  <div class="col-md-6 offset-md-3">
+    
+    <form (ngSubmit) = "OnSubmit()"> <h3 class="text-center"> Registrar Estudiante</h3> 
+        <div class="form-group">
+            <label>Nombres: </label>
+            <input [(ngModel)] ="estu.nombestudiante" type="text" class="form-control" id="nombestudiante"   name ="nombestudiante" placeholder = "Ingrese su Nombre:">
+        </div>
+        <div class="form-group">
+            <label>Apellido Paterno: </label>
+            <input class="form-control" id="apellipaterno" [(ngModel)] ="estu.apellipaterno"  name ="apellipaterno" placeholder ="Ingrese apellido Paterno">
+        </div>
+        <div class="form-group">
+            <label>Apellido Materno: </label>
+            <input class="form-control" id="apellimaterno" [(ngModel)] ="estu.apellimaterno"  name ="apellimaterno" placeholder ="Ingrese apellido Materno">
+        </div>
+        <div class="form-group">
+            <label>DNI: </label>
+            <input class="form-control" type="number" id="dni" [(ngModel)] ="estu.dni"  name ="dni" placeholder="Ingrese DNI">
+        </div>
+        <div class="form-group">
+            <label>Edad: </label>
+            <input class="form-control" type="number" id="edad" [(ngModel)] ="estu.edad"  name ="edad" placeholder="Ingrese su Edad">
+        </div>
+        <div class="form-group">
+            <label>Fecha de Nacimiento: </label>
+            <input class="form-control" type="date" id="fechanacimiento" [(ngModel)] ="estu.fechanacimiento"  name ="fechanacimiento">
+        </div>
+        <button class="btn btn-success" >Guardar</button>
+    </form>
+</div> -->
+
+
+
+
+ <section class="form-register" >
+    <h2 class="text-center">Registrar Abarrotes</h2>
+<form (ngSubmit) = "OnSubmit()">
+    <label >Nombres: </label>
+    <input [(ngModel)] ="aba.nombabarrotesfranco" type="text" class="controls"  id="nombabarrotesfranco"   name ="nombabarrotesfranco" placeholder = "Ingrese su Nombre:">
+    <label>Precio: </label>
+    <input class="controls" type="number" id="precio" [(ngModel)] ="aba.precio"  name ="dni" placeholder="Ingrese Precio">
+    <label>Fecha de Vencimiento: </label>
+    <input class="controls" type="date" id="fechaven" [(ngModel)] ="aba.fechaven"  name ="fechaven">
+    <br><br>
+<button class="btn btn-primary btn-lg btn-block">Guardar</button>  
+</form>
+
+
+</section> 
